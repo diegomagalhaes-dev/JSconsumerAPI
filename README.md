@@ -1,4 +1,5 @@
-![Uploading Gravar_2020_07_12_20_56_24_442_Trim.gif…]()
+![Gravar_2020_07_12_20_56_24_442_Trim](https://user-images.githubusercontent.com/54685310/87312545-16ff0780-c4f7-11ea-84e3-13ed1f332c8b.gif)
+
 
 
 # Nesta implementação, consumimos a API da Marvel Comics utilizando o JavaScript "puro". E renderizamos os resultados das requisições em uma página HTML estilizada com CSS.
