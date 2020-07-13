@@ -1,0 +1,103 @@
+/*
+    CSS
+*/
+
+body {
+    background: #F0694D;
+    background: linear-gradient(to right, rgb(121, 21, 21), rgb(147, 78, 168));
+    color: white;
+    margin: 0;
+    font-family: rubik;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 54px;
+}
+
+.filter-container {
+    margin-top: 0px;
+    width: 80vw;
+    max-width: 800px;
+}
+
+.filter {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.marvel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 30px;
+    padding-inline-start: 0;
+}
+
+.card {
+    list-style: none;
+    padding: 40px;
+    color: rgb(41, 37, 37);
+    text-align: center;
+    border-radius: 30px;
+    position: relative;
+}
+
+.normal {
+    border: solid 2px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 3px black;
+}
+
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
+}
+
+.card-description {
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    position: relative;
+    z-index: 2;
+}
+
+.card-image {
+    height: 220px;
+    border: solid;
+    box-shadow: 0px 0px 8px 5px rgb(75, 2, 2);
+    position: relative;
+    z-index: 2;
+}
+
+
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
