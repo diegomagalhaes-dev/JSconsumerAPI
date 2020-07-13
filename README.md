@@ -1,4 +1,5 @@
-#Markdown
+![Uploading Gravar_2020_07_12_20_56_24_442_Trim.gif…]()
+
 
 # Nesta implementação, consumimos a API da Marvel Comics utilizando o JavaScript "puro". E renderizamos os resultados das requisições em uma página HTML estilizada com CSS.
 ## Para termos acesso a API devemos acessar o endereço abaixo: 
