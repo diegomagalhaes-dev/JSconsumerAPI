@@ -1,5 +1,3 @@
-#Markdown
-
 # Nesta implementação, consumimos a API da Marvel Comics utilizando o JavaScript "puro". E renderizamos os resultados das requisições em uma página HTML estilizada com CSS.
 ## Para termos acesso a API devemos acessar o endereço abaixo: 
 *_ [Google] https://developer.marvel.com _*

@@ -40,39 +40,22 @@ const earlyFeed = async () => {
 // Exibe os heróis pesquisados: 
 const searchPersonIntoDOM = async (search) => {
 
-    if (search != '') {
-        const heros = await getPosts(`${'name='}${search}`);
-        const postsTemplate = herosFromSearch(heros)
-        ul.innerHTML = postsTemplate;
-    }
+    const heros = await getPosts(`${'name='}${search}`);
+    const postsTemplate = herosFromSearch(heros)
+    ul.innerHTML = postsTemplate;
+
 }
 
-
-const displayHeroIfEqualToInput = inputValue => post => {
-    const posttitle = post.querySelector(".card-title").textContent.toLowerCase()
-    if (posttitle.includes(inputValue)) {
-        post.style.display = ''
-        return
-    }
-    post.style.display = 'none'
-}
 
 // Função que verifica o input "pesquisar personagens"
 const modifyInputValue = event => {
     const inputValue = event.target.value.toLowerCase();
-    const heros = document.querySelectorAll('.card.normal');
-
-    verifyInput(inputValue);
-    heros.forEach(displayHeroIfEqualToInput(inputValue))
-
-    if (inputValue == '' || inputValue == null) {
+    if (inputValue != '') {
+        searchPersonIntoDOM(inputValue);
+    } else if (inputValue == '' || inputValue == null) {
         earlyFeed();
     }
 }
-
-
-const verifyInput = inputValue => searchPersonIntoDOM(inputValue)
-
 
 earlyFeed();
 filterImput.addEventListener('input', modifyInputValue)
